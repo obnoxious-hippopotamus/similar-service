@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack -d --watch",
-    "start:dev": "nodemon server/server.js -w server -w database"
+    "start:dev": "nodemon server/server.js -w server -w database",
+    "test:seed": "node seed.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "babel": "^6.23.0",
     "bluebird": "^3.7.2",
     "express": "^4.17.1",

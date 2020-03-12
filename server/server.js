@@ -1,9 +1,11 @@
 const express = require('express');
 const morgan = require('morgan');
+// const movieRoutes = require('./server/routes/movieRoutes');
 
 const app = express();
 const PORT = 3000;
 
+//ROUTE IMPORT
 
 //middleware
 app.use(morgan('dev')); 
@@ -11,8 +13,11 @@ app.use(express.json());
 
 
 
+
+
 //serve static files/webpack bundle
 app.use(express.static(__dirname + '/../public'));
+
 
 
 
