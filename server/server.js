@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-// const movieRoutes = require('./server/routes/movieRoutes');
+const movieRoutes = require('./routes/movieRoutes');
 
 const app = express();
 const PORT = 3000;
@@ -17,6 +17,10 @@ app.use(express.json());
 
 //serve static files/webpack bundle
 app.use(express.static(__dirname + '/../public'));
+
+
+//ROUTES
+app.use('/similars', movieRoutes);
 
 
 
