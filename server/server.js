@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const movieRoutes = require('./routes/movieRoutes');
+var bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 3000;
@@ -10,6 +11,7 @@ const PORT = 3000;
 //middleware
 app.use(morgan('dev')); 
 app.use(express.json());
+app.use(bodyParser.json());
 
 
 
