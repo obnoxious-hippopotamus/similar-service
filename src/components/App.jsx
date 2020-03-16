@@ -17,11 +17,12 @@ class App extends React.Component {
     render() {
       return (
         <div>
-          <h1>Customers Who Watched This Item Also Watched</h1>
+          <main className="header" >Customers who watched this item also watched</main>
             <div className="wrapper" >
               <div className="movieWheel">Movie Wheel</div>
-              <div className="description">Description Keys</div>
-              <div className="details">Details and Information</div>
+              <div className="moreDetails" >More Details</div>
+              <div className="details">actors and what not</div>
+              <div className="description">Description and Information</div>
               {/* <Details /> */}
             </div>
         </div>
