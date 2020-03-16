@@ -9,15 +9,17 @@
 .wrapper {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows:  201px 25px 200px; 
+  grid-template-rows:  201px 100px 200px; 
 }
 
 
 .header {
   font-family: "Amazon Ember Regular",Arial,sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 24px;
   color: #fff;
+  text-rendering:optimizelegibility;
+  -webkit-font-smoothing:antialiased;
 }
 
 
@@ -31,7 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   margin:0;
-  /* padding: 20px;  */
+  padding: 10px; 
   overflow-x: scroll;
 }
 
@@ -60,18 +62,38 @@
 
 .moreDetails {
   background-color: #0f171e;
-  border: white solid 1px;
+  /* border: white solid 1px; */
   font-family: "Amazon Ember Regular",Arial,sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 24px;
   color: #fff;
   grid-column: 1/4;
+  padding-top: 60px;
+  text-rendering:optimizelegibility;
+  -webkit-font-smoothing:antialiased;
 } 
 
 .details {
   background-color: #0f171e;
   border: white solid 1px;
   color: #fff;
+  padding-right: 10px;
+}
+
+
+.detailsProperties {
+  list-style-type: none;
+  color:rgb(129, 151, 164);
+  font-family:"Amazon Ember Regular", Arial, sans-serif;
+  font-size:17px;
+  font-weight:700;
+  height:auto;
+  line-height:20px;
+  text-size-adjust:100%;
+  white-space:nowrap;
+  width:auto;
+  word-break:break-word;
+  -webkit-font-smoothing:antialiased;
 }
 
 
