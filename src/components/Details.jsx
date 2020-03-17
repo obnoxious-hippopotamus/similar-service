@@ -6,7 +6,7 @@ const Details = () => {
           <li>Studio</li>
           <li>MPAA rating</li>
           <li>Subtitles</li>
-          <li>Audio Languages</li>
+          <li>Supporting Actors</li>
           <li>Purchase Rights</li>
           <li>Format</li>
           <li>Devices</li>

@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const models = require('../models/models');
+const controllers = require('../controllers/movieControllers');
 
 
 
-router.get('/similars', models.getSimilarMovies);
+router.get('/', controllers.getSimilarMovies);
 
 
 

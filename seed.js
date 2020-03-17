@@ -27,7 +27,7 @@ var faker = require('faker');
     var descriptionEndpoint = `https://api.themoviedb.org/3/movie/${movieIds[i]}?api_key=5ee6c27316d948d0a1d5833299d57422&language=en-US`
     await axios.get(descriptionEndpoint)
     .then(response => {
-      console.log(response.data.genres[0]);
+      console.log(response.data);
       var queryString = `INSERT INTO attributes(movieId, title, studio, audioLanguages, poster, supportingActors1, supportingActors2, supportingActors3, producers, subtitles, purchaseRights, formats, devices, genre) 
       VALUES(${response.data.id}, "${response.data.original_title}", "${response.data.production_companies[0].name}", "${response.data.original_language}", "${response.data.poster_path}", "${faker.name.findName()}",
        "${faker.name.findName()}", "${faker.name.findName()}", "${faker.name.findName()}", "Yes", "Stream Instantly Details", "Prime Video (streaming online video)", "Available to watch on supported devices", "${response.data.genres[0].name}")`;

@@ -4,6 +4,7 @@ const connection = require('../../database/connection');
 
 
 
+
   const getSimilarMovies = () => {
     return new Promise ((resolve, reject) => {
       const queryString = 'SELECT poster FROM attributes';
