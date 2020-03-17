@@ -4,6 +4,7 @@ const controllers = require('../controllers/movieControllers');
 
 
 
+
 router.get('/', controllers.getSimilarMovies);
 
 
