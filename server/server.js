@@ -1,12 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
-const movieRoutes = require('./routes/movieRoutes');
 var bodyParser = require('body-parser');
 
+
 const app = express();
-const PORT = 3000;
+const PORT = 3003;
 
 //ROUTE IMPORT
+const movieRoutes = require('./routes/movieRoutes');
 
 //middleware
 app.use(morgan('dev')); 
@@ -22,8 +23,7 @@ app.use(express.static(__dirname + '/../public'));
 
 
 //ROUTES
-app.use('/similars', movieRoutes);
-
+app.use('/api/similars', movieRoutes);
 
 
 
