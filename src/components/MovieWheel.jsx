@@ -1,11 +1,15 @@
 import React from 'react';
-import MovieItem from './MovieItem';
+import MovieItem from './MovieItem.jsx';
 
 
 const MovieWheel = (props) => {
   return (
     <ul className="movieWheel">
-      props.
+      {props.moviePosters.map(eachPoster => {
+        return (
+          <MovieItem eachPoster={eachPoster} />
+        )
+      })}
     </ul>
   )
 };

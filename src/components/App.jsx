@@ -3,6 +3,7 @@ import Axios from 'axios';
 import Details from './Details.jsx';
 import Descriptions from './Descriptions.jsx';
 import Footer from './Footer.jsx';
+import MovieWheel from './MovieWheel.jsx'
 
 
 class App extends React.Component {
@@ -18,7 +19,7 @@ class App extends React.Component {
 
     componentDidMount() {
       console.log('mounted');
-      Axios.get('http://localhost:3000/api/similars')
+      Axios.get('http://localhost:3003/api/similars')
       .then(results => {
         return results
       })
@@ -39,10 +40,9 @@ class App extends React.Component {
         <div>
           <main className="mainHeader" >Customers who watched this item also watched</main>
             <div className="wrapper" >
-              <div className="movieWheel">Movie Wheel</div>
+              <MovieWheel moviePosters={this.state.moviePosters} className="movieWheel" />
               <div className="moreDetailsHeader">More details</div>
               <Details className="details"/>
-              <MovieWheel moviePosters={this.state.moviePosters} className="movieWheel" />
               <Descriptions className="description"/>
               <Footer className="footer" />
             </div>

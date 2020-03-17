@@ -32,33 +32,43 @@
 .movieWheel { 
   background-color:#0f171e;
   grid-column: 1/4;
-  border: white solid 1px;
+  /* border: white solid 1px; */
   color:white;
   padding-left: 40px;
-  /* width: 100%; */
 
   flex-basis:80%;
   display: flex;
   flex-wrap: wrap;
   margin:0;
   padding: 10px; 
-  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 /*ELEMENT TO RENDER EACH MOVIE POSTER DYNAMICALLY*/
 .eachMovie {
-  flex-basis: 22%;
-  box-sizing: border-box;
-  margin: 1.5%;
+  flex-basis: 10%;
+  /* box-sizing: border-box; */
+  margin: 4px;
+ 
 
 
   display: flex;
   flex-direction: column;
   list-style: none;
 
-  background-color: #fff;
-  border: 1px solid #eee;
+  /* background-color: #fff; */
+  /* border: 1px solid #eee; */
   box-shadow: 0 10px 28px -7px rgba(0,0,0,0.1);
+}
+
+/* .movie_item > img {
+  width: 100%;
+} */
+
+.moviePoster {
+  height: 200px;
+  width: 150px;
+  border-radius: 4px;
 }
   
 
