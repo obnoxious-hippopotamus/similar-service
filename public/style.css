@@ -1,0 +1,128 @@
+
+
+
+
+#app, body {
+  background-color:#0f171e;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 12% 50% 30%;
+  grid-template-rows:  201px 100px 200px; 
+}
+
+
+.mainHeader {
+  font-family: "Amazon Ember Regular",Arial,sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  color: #fff;
+  text-rendering:optimizelegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+
+.movieWheel { 
+  background-color:#0f171e;
+  grid-column: 1/4;
+  border: white solid 1px;
+  color:white;
+
+  flex-basis:80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding: 10px; 
+  overflow-x: scroll;
+}
+
+.eachMovie {
+  flex-basis: 22%;
+  box-sizing: border-box;
+  margin: 1.5%;
+
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 28px -7px rgba(0,0,0,0.1);
+}
+  
+
+ .description {
+  background-color:#0f171e;
+  grid-column: 2/4;
+  border: white solid 1px;
+  color: white;
+}
+
+.moreDetailsHeader {
+  background-color: #0f171e;
+  /* border: white solid 1px; */
+  font-family: "Amazon Ember Regular",Arial,sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: #fff;
+  grid-column: 1/4;
+  padding-top: 60px;
+  text-rendering:optimizelegibility;
+  -webkit-font-smoothing:antialiased;
+} 
+
+.details {
+  background-color: #0f171e;
+  border: white solid 1px;
+  color: #fff;
+  padding-right: 10px;
+}
+
+
+.detailsProperties {
+  list-style-type: none;
+  color:rgb(129, 151, 164);
+  font-family:"Amazon Ember Regular", Arial, sans-serif;
+  font-size:17px;
+  font-weight:700;
+  height:auto;
+  line-height:20px;
+  text-size-adjust:100%;
+  white-space:nowrap;
+  width:auto;
+  word-break:break-word;
+  -webkit-font-smoothing:antialiased;
+}
+
+
+.detailsValues {
+  list-style-type: none;
+  color:rgb(129, 151, 164);
+  font-family:"Amazon Ember Regular", Arial, sans-serif;
+  font-size:17px;
+  height:auto;
+  line-height:20px;
+  text-size-adjust:100%;
+  white-space:nowrap;
+  width:auto;
+  word-break:break-word;
+  -webkit-font-smoothing:antialiased;
+}
+
+a {
+  color:#79B8F3;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+
+}
+
+
+
+
+
+
+
+ 
+
