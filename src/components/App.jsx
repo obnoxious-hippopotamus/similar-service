@@ -24,6 +24,7 @@ class App extends React.Component {
               <div className="movieWheel">Movie Wheel</div>
               <div className="moreDetailsHeader">More details</div>
               <Details className="details"/>
+              {/* <MovieWheel className="movieWheel" /> */}
               <Descriptions className="description"/>
               <Footer className="footer" />
             </div>
