@@ -1,5 +1,6 @@
 import React from 'react';
 import Details from './Details.jsx';
+import Descriptions from './Descriptions.jsx'
 
 
 class App extends React.Component {
@@ -17,12 +18,12 @@ class App extends React.Component {
     render() {
       return (
         <div>
-          <main className="header" >Customers who watched this item also watched</main>
+          <main className="mainHeader" >Customers who watched this item also watched</main>
             <div className="wrapper" >
               <div className="movieWheel">Movie Wheel</div>
-              <div className="moreDetails" >More details</div>
+              <div className="moreDetailsHeader" >More details</div>
               <Details className="details"/>
-              <div className="description">Description and Information</div>
+              <Descriptions className="description"/>
             </div>
         </div>
       )

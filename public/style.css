@@ -8,14 +8,14 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 12% 50% 30%;
   grid-template-rows:  201px 100px 200px; 
 }
 
 
-.header {
+.mainHeader {
   font-family: "Amazon Ember Regular",Arial,sans-serif;
-  font-size: 19px;
+  font-size: 21px;
   line-height: 24px;
   color: #fff;
   text-rendering:optimizelegibility;
@@ -60,7 +60,7 @@
   color: white;
 }
 
-.moreDetails {
+.moreDetailsHeader {
   background-color: #0f171e;
   /* border: white solid 1px; */
   font-family: "Amazon Ember Regular",Arial,sans-serif;
@@ -96,6 +96,27 @@
   -webkit-font-smoothing:antialiased;
 }
 
+
+.detailsValues {
+  list-style-type: none;
+  color:rgb(129, 151, 164);
+  font-family:"Amazon Ember Regular", Arial, sans-serif;
+  font-size:17px;
+  height:auto;
+  line-height:20px;
+  text-size-adjust:100%;
+  white-space:nowrap;
+  width:auto;
+  word-break:break-word;
+  -webkit-font-smoothing:antialiased;
+}
+
+a {
+  color:#79B8F3;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+
+}
 
 
 
