@@ -10,7 +10,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: 12% 50% 38%;
-  grid-template-rows:  201px 100px 200px 200px; 
+  grid-template-rows:  240px 100px 200px 200px; 
 }
 
 
@@ -28,31 +28,54 @@
 }
 
 
+
 /***************************CONTAINER FOR MOVIE POSTER RENDER**************************/
 .movieWheel { 
   background-color:#0f171e;
   grid-column: 1/4;
-  /* border: white solid 1px; */
-  color:white;
   padding-left: 40px;
 
   flex-basis:80%;
   display: flex;
   flex-wrap: wrap;
-  margin:0;
-  padding: 10px; 
-  overflow-y: scroll;
+
+
+  position: relative;
+	max-width: 90%;
+	/* border: 1px solid black; */
+	overflow-x: hidden;
+  overflow-y: hidden;
+  /* -webkit-overflow-scrolling: touch; */
 }
+
+
+/* .paddle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3em;
+}
+.left-paddle {
+	left: 0;
+}
+.right-paddle {
+	right: 0;
+}
+.hidden {
+	display: none;
+} */
 
 /*ELEMENT TO RENDER EACH MOVIE POSTER DYNAMICALLY*/
 .eachMovie {
   flex-basis: 10%;
   /* box-sizing: border-box; */
-  margin: 4px;
- 
+  margin: 5px;
+  overflow-x: hidden;
+	overflow-y: hidden;
+  /* -webkit-overflow-scrolling: touch; */
+  white-space: nowrap;
 
-
-  display: flex;
+  /* display: inline-flex; */
   flex-direction: column;
   list-style: none;
 
@@ -61,14 +84,14 @@
   box-shadow: 0 10px 28px -7px rgba(0,0,0,0.1);
 }
 
-/* .movie_item > img {
-  width: 100%;
-} */
 
 .moviePoster {
+  width: 130px;
+  display: flex;
   height: 200px;
-  width: 150px;
-  border-radius: 4px;
+  /* box-sizing: border-box; */
+  border-radius: 3px;
+  /* display: inline-block; */
 }
   
 

@@ -19,6 +19,21 @@ const getSimilarMovies = (req, res) => {
 }
 
 
+const getMovieDetails = (req, res) => {
+  const id = req.query.id
+  models.getMovieDetails(id)
+  .then(results => {
+      console.log(req)
+      res.status(201).json({ results })
+  })
+  .catch(err => {
+      res.status(400).json({
+          message: "Something went wrong!!",
+          err: err
+      })
+  })
+};
+
 
 
 
@@ -27,5 +42,6 @@ const getSimilarMovies = (req, res) => {
 
 
 module.exports = {
-    getSimilarMovies
+    getSimilarMovies,
+    getMovieDetails
 }

@@ -5,7 +5,7 @@ const Details = () => {
         <ul className="detailsProperties" >
           <li>Studio</li>
           <li>MPAA rating</li>
-          <li>Subtitles</li>
+          <li>Producers</li>
           <li>Supporting Actors</li>
           <li>Purchase Rights</li>
           <li>Format</li>

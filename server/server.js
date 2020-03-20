@@ -23,7 +23,8 @@ app.use(express.static(__dirname + '/../public'));
 
 
 //ROUTES
-app.use('/api/similars', movieRoutes);
+app.use('/', movieRoutes);
+app.use('/', movieRoutes)
 
 
 

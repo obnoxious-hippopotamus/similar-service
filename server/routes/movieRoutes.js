@@ -5,7 +5,14 @@ const controllers = require('../controllers/movieControllers');
 
 
 
-router.get('/', controllers.getSimilarMovies);
+
+
+
+router.get(`/api/descriptions`, controllers.getMovieDetails);
+
+
+router.get('/api/similars', controllers.getSimilarMovies);
+
 
 
 
