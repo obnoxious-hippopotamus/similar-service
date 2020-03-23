@@ -32,14 +32,19 @@
   "dependencies": {
     "axios": "^0.19.2",
     "babel": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "faker": "^4.1.0",
+    "horizontal-scroll": "^1.1.0",
+    "jquery": "^3.4.1",
     "morgan": "^1.9.1",
     "mysql": "^2.18.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-native-hyperlink": "0.0.19"
+    "react-horizontal-scrolling-menu": "^0.7.7",
+    "react-native-hyperlink": "0.0.19",
+    "uniqid": "^5.2.0"
   }
 }
