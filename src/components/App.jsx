@@ -4,6 +4,7 @@ import Details from './Details.jsx';
 import Descriptions from './Descriptions.jsx';
 import Footer from './Footer.jsx';
 import MovieWheel from './MovieWheel.jsx'
+import Controller from './Controller.jsx'
 
 
 class App extends React.Component {
@@ -13,11 +14,11 @@ class App extends React.Component {
       this.state = {
         moviePosters: [], 
         descriptions: [],
-        id: 284053
+        id: 284053,
       }
 
     }
-
+    
 
     async componentDidMount() {
       console.log('mounted');
@@ -61,6 +62,7 @@ class App extends React.Component {
 
 
     render() {
+   
       return (
         <div>
           <main className="mainHeader" >Customers who watched this item also watched</main>
