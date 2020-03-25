@@ -6,6 +6,7 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
   host: 'localhost',
   database: 'similars_db',
+  password: process.env.DB_PASS,
   user: 'root'
 });
 

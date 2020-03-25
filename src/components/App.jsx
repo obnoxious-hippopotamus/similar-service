@@ -24,7 +24,7 @@ class App extends React.Component {
       console.log('mounted');
 
 
-      await Axios.get('http://localhost:3003/api/descriptions', {
+      await Axios.get('/api/descriptions', {
         params:{
         id: `${this.state.id}`
       }
@@ -44,7 +44,7 @@ class App extends React.Component {
       });
 
 
-      await Axios.get('http://localhost:3003/api/similars')
+      await Axios.get('/api/similars')
       .then(results => {
         return results
       })
