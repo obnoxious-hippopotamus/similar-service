@@ -7,7 +7,7 @@ const connection = require('../../database/connection');
 
   const getSimilarMovies = () => {
     return new Promise ((resolve, reject) => {
-      const queryString = 'SELECT poster FROM attributes WHERE genre="Action"';
+      const queryString = 'SELECT poster FROM attributes WHERE studio="Marvel Studios"';
       connection.query(queryString, (err, results, fields) => {
         if (err) {
           reject(err);
