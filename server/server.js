@@ -1,10 +1,11 @@
 const express = require('express');
 const morgan = require('morgan');
 var bodyParser = require('body-parser');
+const cors = require('cors');
 
 
 const app = express();
-const PORT = 3003;
+const PORT = 3000;
 
 //ROUTE IMPORT
 const movieRoutes = require('./routes/movieRoutes');
@@ -13,6 +14,7 @@ const movieRoutes = require('./routes/movieRoutes');
 app.use(morgan('dev')); 
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(cors());
 
 
 
