@@ -14,7 +14,7 @@ class App extends React.Component {
       this.state = {
         moviePosters: [], 
         descriptions: [],
-        id: 284053,
+        id: 419704,
       }
 
     }
@@ -46,6 +46,7 @@ class App extends React.Component {
 
       await Axios.get('http://localhost:3000/api/similars')
       .then(results => {
+        console.log(results)
         return results
       })
       .then(posters => {
@@ -62,7 +63,6 @@ class App extends React.Component {
 
 
     render() {
-   
       return (
         <div>
           <main className="mainHeader" >Customers who watched this item also watched</main>
