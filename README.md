@@ -48,6 +48,8 @@ mysql -u root
 npm run seed  
 ```
 
+## Viewing the app
 
+Navigate to http://localhost:3000 in order to see a development version of the app.
 
 
