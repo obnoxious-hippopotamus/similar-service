@@ -1,21 +1,21 @@
- -- this is set as a schema script - "mysql -u root < schema.sql",
 
 
 
---  DROP DATABASE IF IT ALREADY EXISTS
+
+
 DROP DATABASE IF EXISTS similars_db;
 
 
 
---  CREATE DATABASE 
+
 CREATE DATABASE similars_db;
 
 
---  USE DATABASE
+
 USE similars_db;
 
 
---  CREATE TABLES
+
 CREATE TABLE attributes (
   id SERIAL PRIMARY KEY, 
   movieId INT NOT NULL,
@@ -36,5 +36,3 @@ CREATE TABLE attributes (
 );
 
 
---  SEED DATA
--- SEE SEED SCRIPT IN PACKAGE JSON
