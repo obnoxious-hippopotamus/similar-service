@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack -d --watch",
-    "start": "node server/server.js -w server -w database",
+    "start": "node server/server.js -w server",
     "seed": "node schema.sql && node database/seed.js"
   },
   "repository": {
