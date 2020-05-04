@@ -27,7 +27,7 @@ app.use(express.static(__dirname + '/../public'));
 
 //ROUTES
 app.use('/', movieRoutes);
-app.use('/', movieRoutes)
+
 
 
 
