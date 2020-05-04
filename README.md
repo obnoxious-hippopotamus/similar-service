@@ -1,6 +1,6 @@
 # Amazon Prime Video Clone
 
-One Paragraph of project description goes here
+Microservice that reproduces the video carousel portion of an Amazon Prime Video landing page.  Made as close an imitatiion to the amazon website as possible.  One of 3 microservices that make up a single web page.  
 
 ## Getting Started
 
@@ -8,20 +8,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Make a copy of this repository and clone it onto your local machine.
+cd into the newly created directory and open the file into your favorite text editor.
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+In the root directory of the project, execute the following commands in the terminal.
 
-Say what the step will be
+Install Dependencies
 
 ```
-Give the example
+npm install
 ```
 
 And repeat
