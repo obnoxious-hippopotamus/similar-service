@@ -1,0 +1,23 @@
+version: '3.4'
+services:
+  database:
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: similars_db
+    expose:
+      - 127.0.0.1:3306
+    network_mode: "host"
+    # ports:
+    #   - '3306:3306'
+    image: mysql:latest
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - 'similars_db'
+    volumes:
+      - '.:/usr/src/app'
+    command: npm start
+    ports:
+      - 3000:3000

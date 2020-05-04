@@ -23,7 +23,6 @@ const getMovieDetails = (req, res) => {
   const id = req.query.id
   models.getMovieDetails(id)
   .then(results => {
-      console.log(req)
       res.status(201).json({ results })
   })
   .catch(err => {

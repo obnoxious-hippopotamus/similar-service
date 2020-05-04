@@ -1,6 +1,6 @@
 
 const axios = require('axios');
-const connection = require('./database/connection');
+const connection = require('./connection');
 var faker = require('faker');
 
 
