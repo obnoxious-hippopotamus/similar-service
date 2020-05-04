@@ -8,6 +8,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+This app uses MySQL DBMS.  You must have MySQL installed and a running mySQL server on your local machine in order to seed mock data.    
+
+
 Make a copy of this repository and clone it onto your local machine.
 cd into the newly created directory and open the file into your favorite text editor.
 
@@ -33,6 +36,18 @@ Fire up development server
 npm start
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Log into MySQL to ensure everything installed correctly
+
+```
+mysql -u root  
+```
+
+ From the root directory, the following terminal commands will create the mySQL schema and seed the database with mock data.  
+
+```
+npm run seed  
+```
+
+
 
 
