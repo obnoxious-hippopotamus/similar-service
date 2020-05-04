@@ -2,12 +2,6 @@
 
 
 
-
-DROP DATABASE IF EXISTS similars_db;
-
-
-
-
 CREATE DATABASE similars_db;
 
 
