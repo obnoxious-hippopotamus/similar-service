@@ -3,11 +3,7 @@ const mysql = require('mysql');
 
 
 //DATABASE CONNECTION - this how we are able to make queries to our DB
-const connection = mysql.createConnection({
-  host: 'localhost',
-  database: 'similars_db',
-  user: 'root'
-});
+const connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL);
 
 
 connection.connect(function(err) {
@@ -16,7 +12,7 @@ connection.connect(function(err) {
     return;
   }
 
-  console.log('connected as id ' + connection.threadId);
+  console.log('Houston, we have a connection! With ID:' + connection.threadId);
 });
 
 

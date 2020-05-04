@@ -1,3 +1,4 @@
+require.env.config();
 const express = require('express');
 const morgan = require('morgan');
 var bodyParser = require('body-parser');
