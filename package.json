@@ -5,13 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack -d --watch",
-<<<<<<< HEAD
-    "start": "node server/server.js",
-    "test:seed": "node seed.js"
-=======
     "start": "node server/server.js -w server -w database",
     "seed": "node schema.sql && node database/seed.js"
->>>>>>> 7f3fa70e6ba173dd7678eeb9e35c8b3509717908
   },
   "repository": {
     "type": "git",
