@@ -22,10 +22,15 @@ Install Dependencies
 npm install
 ```
 
-And repeat
+Run webpack in watch mode
 
 ```
-until finished
+npm run build:dev
+```
+Fire up development server
+
+```
+npm start
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
