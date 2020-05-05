@@ -27,8 +27,8 @@ app.use(express.static('public'));
 
 
 //ROUTES
-app.use('/api/similars', movieRoutes);
-app.use('/api/descriptions', movieRoutes);
+app.use('/api', movieRoutes);
+
 
 
 
