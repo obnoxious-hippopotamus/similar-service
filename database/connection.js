@@ -1,6 +1,11 @@
 
 const mysql = require('mysql');
 
+var db_config = {
+  host: 'localhost',
+    user: 'root',
+    password: ''
+};
 
 //DATABASE CONNECTION - this how we are able to make queries to our DB
 const connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL);
@@ -18,7 +23,7 @@ connection.connect(function(err) {
 
 
 function handleDisconnect() {
- // Recreate the connection, since
+  connection = mysql.createConnection(db_config); // Recreate the connection, since
                                                   // the old one cannot be reused.
 
   connection.connect(function(err) {              // The server is either down
