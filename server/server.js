@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 var bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 
 
 const app = express();
@@ -22,7 +23,7 @@ app.use(cors());
 
 
 //serve static files/webpack bundle
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 
 
 //ROUTES
