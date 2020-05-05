@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 const movieRoutes = require('./routes/movieRoutes');
 
 //ROUTES
-app.use('/', movieRoutes);
+app.use('/api', movieRoutes);
 
 //middleware
 app.use(morgan('dev')); 
