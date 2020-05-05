@@ -22,7 +22,7 @@ app.use(cors());
 
 
 //serve static files/webpack bundle
-app.use(express.static(__dirname + '/../public'));
+app.use(express.static(__dirname + '/public'));
 
 
 //ROUTES
