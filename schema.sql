@@ -2,14 +2,6 @@
 
 
 
-CREATE DATABASE similars_db;
-
-
-
-USE similars_db;
-
-
-
 CREATE TABLE attributes (
   id SERIAL PRIMARY KEY, 
   movieId INT NOT NULL,
