@@ -28,7 +28,8 @@ app.use(cors());
 app.use(express.static('public'));
 
 //ROUTES
-app.use('/api', movieRoutes);
+app.use('/', movieRoutes);
+app.use('/', movieRoutes);
 
 
 
