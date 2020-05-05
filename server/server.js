@@ -34,11 +34,6 @@ app.use('/api', movieRoutes);
 
 
 
-
-
-
-
-
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });

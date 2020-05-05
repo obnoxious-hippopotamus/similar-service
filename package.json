@@ -6,7 +6,7 @@
   "scripts": {
     "build:dev": "webpack -d --watch",
     "dev": "nodemon server/server.js",
-    "start":"nodemon server/server.js",
+    "start": "nodemon server/server.js",
     "heroku-postbuild": "webpack -p",
     "seed": "node database/seed.js"
   },
@@ -45,6 +45,7 @@
     "jquery": "^3.4.1",
     "morgan": "^1.9.1",
     "mysql": "^2.18.1",
+    "nodemon": "^2.0.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-horizontal-scrolling-menu": "^0.7.7",
