@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack -d --watch",
-    "start": "node server/server.js -w server",
+    "dev": "node server/server.js",
     "heroku-postbuild": "webpack -p",
     "seed": "node database/seed.js"
   },
