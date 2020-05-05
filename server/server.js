@@ -12,8 +12,7 @@ const PORT = process.env.PORT || 3000;
 //ROUTE IMPORT
 const movieRoutes = require('./routes/movieRoutes');
 
-//ROUTES
-app.use('/api', movieRoutes);
+
 
 //middleware
 app.use(morgan('dev')); 
@@ -28,7 +27,8 @@ app.use(cors());
 //serve static files/webpack bundle
 app.use(express.static('public'));
 
-
+//ROUTES
+app.use('/api', movieRoutes);
 
 
 
