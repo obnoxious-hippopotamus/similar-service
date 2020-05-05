@@ -1,6 +1,6 @@
 # Amazon Prime Video Clone
 
-Microservice that reproduces the video carousel portion of an Amazon Prime Video landing page.  Made as close an imitatiion to the amazon website as possible.  One of 3 microservices that make up a single web page.  On the back end, the my seed script reaches out to a 3rd party API in order to render up to date movie images and descriptions.  You can see a deployed version of the app here: http://hubbsy-amazon-clone.herokuapp.com  
+Microservice that reproduces the video carousel portion of an Amazon Prime Video landing page.  Made as close an imitatiion to the amazon website as possible.  One of 3 microservices that make up a single web page.  On the back end, my seed script reaches out to a 3rd party API in order to render up to date movie images and descriptions.  You can see a deployed version of the app here: http://hubbsy-amazon-clone.herokuapp.com  
 
 ## Getting Started
 
