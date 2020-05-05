@@ -23,11 +23,12 @@ app.use(cors());
 
 
 
-
 //serve static files/webpack bundle
 app.use(express.static('public'));
 
 //ROUTES
+app.use('/', movieRoutes);
+app.use('/', movieRoutes);
 app.use('/', movieRoutes);
 app.use('/', movieRoutes);
 
