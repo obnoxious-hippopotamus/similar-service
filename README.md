@@ -1,6 +1,6 @@
 # Amazon Prime Video Clone
 
-Microservice that reproduces the video carousel portion of an Amazon Prime Video landing page.  Made as close an imitatiion to the amazon website as possible.  One of 3 microservices that make up a single web page.  
+Microservice that reproduces the video carousel portion of an Amazon Prime Video landing page.  Made as close an imitatiion to the amazon website as possible.  One of 3 microservices that make up a single web page.  You can see a deployed version of the app here: http://hubbsy-amazon-clone.herokuapp.com  
 
 ## Getting Started
 
@@ -36,10 +36,10 @@ Fire up development server
 npm start
 ```
 
-Log into MySQL to ensure everything installed correctly
+Log into MySQL to ensure everything installed correctly.  Also sets up the database and schema.
 
 ```
-mysql -u root  
+mysql -u root < schema.sql  
 ```
 
  From the root directory, the following terminal commands will create the mySQL schema and seed the database with mock data.  
