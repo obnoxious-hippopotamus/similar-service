@@ -6,6 +6,7 @@
   "scripts": {
     "build:dev": "webpack -d --watch",
     "dev": "node server/server.js",
+    "start":"node server.js",
     "heroku-postbuild": "webpack -p",
     "seed": "node database/seed.js"
   },
