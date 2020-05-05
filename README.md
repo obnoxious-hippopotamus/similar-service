@@ -33,7 +33,7 @@ npm run build:dev
 Fire up development server
 
 ```
-npm start
+npm run dev
 ```
 
 Log into MySQL to ensure everything installed correctly.  Also sets up the database and schema.
